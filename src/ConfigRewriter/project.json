@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0",
+  "compilationOptions": {
+    "emitEntryPoint":  true
+  },
+  "description": "ConfigRewriter Tool",
+  "authors": [ "Ivan Bianko" ],
+  "tags": [ ".net config file rewriter" ],
+  "projectUrl": "https://github.com/ivanbenko/configrewriter",
+  "licenseUrl": "",
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Xml.Linq": "4.0.0.0"
+      }
+    },
+  },
+  "dependencies": {
+  },
+  "commands": {
+    "ConfigRewriter": "ConfigRewriter"
+  }
+}

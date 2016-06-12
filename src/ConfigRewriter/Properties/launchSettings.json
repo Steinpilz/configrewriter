@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConfigRewriter": {
+      "commandName": "ConfigRewriter",
+      "commandLineArgs": "c:\\data\\tmp\\app.config key1=abc \"key2\"=\"hi there\" \"key with space\"=\"no idea\""
+    }
+  }
+}
