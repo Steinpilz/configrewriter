@@ -20,15 +20,16 @@ namespace ConfigRewriter
 
         private AppSetting ParseAppSetting(string arg)
         {
-            var split = arg.Split(new[] {'='});
+            var ind = arg.IndexOf('=');
 
-            if (split.Length == 0)
+            if (ind < 0)
                 return null;
 
-            var key = split[0];
-            var value = split.Length > 1 ? split[1] : "";
-
-            return new AppSetting {Key = key, Value = value};
+            return new AppSetting
+            {
+                Key = arg.Substring(0, ind),
+                Value = arg.Substring(ind + 1)
+            };
         }
 
         public string Dump()
